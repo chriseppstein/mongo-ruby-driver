@@ -14,7 +14,7 @@ The driver will attempt to connect to a master node and, when found, will replac
 
 ### Read slaves
 
-If you want to read from a seconday node, you can pass :read_secondary => true to ReplSetConnection#new.
+If you want to read from a secondary node, you can pass :read_secondary => true to ReplSetConnection#new.
 
     @connection = ReplSetConnection.new(['n1.mydb.net', 27017], ['n2.mydb.net', 27017], ['n3.mydb.net', 27017],
                   :read_secondary => true)
